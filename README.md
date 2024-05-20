@@ -1,8 +1,10 @@
 # Mastermind Game
 
+## May 2024
+
 ![A screenshot of the Mastermind game](/screenshot.png)
 
-Mastermind is a code-breaking game that was invented in Israel. The board game is typically a two-layer game - in which one player chooses a secret code comprised of four colored bulbs, and the second player tried to guess the code.
+Mastermind is a code-breaking game that was invented in Israel. The board game is typically a two-player game - in which one player chooses a secret code comprised of four colored bulbs, and the second player tried to guess the code.
 
 This is my version of the game - built in ReactJS with TypeScript. In this game, the player plays against the computer, and has 12 attempts to guess the correct four-color code. Each of the four bulbs can be one of 8 different colors, and the code can repeat the same color multiple times.
 
