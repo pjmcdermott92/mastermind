@@ -12,7 +12,7 @@ export interface GameState {
 }
 
 type GameContext = {
-    state: GameState;
+    state: Game;
     dispatch: Dispatch<GameReducerAction>;
 };
 
@@ -25,6 +25,7 @@ export const GameContext = createContext<GameContext>({
 export const useGameState = () => useContext(GameContext);
 
 export const GameProvider = ({ children }: { children: React.ReactNode }) => {
+    //@ts-expect-error-error
     const [state, dispatch] = useReducer(gameReducer, initialState());
 
     return <GameContext.Provider value={{ state, dispatch }}>{children}</GameContext.Provider>;
