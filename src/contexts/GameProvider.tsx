@@ -12,7 +12,7 @@ export interface GameState {
 }
 
 type GameContext = {
-    state: Game;
+    state: GameState;
     dispatch: Dispatch<GameReducerAction>;
 };
 
